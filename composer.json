@@ -1,0 +1,12 @@
+{
+    "name": "linnovate/elastic-connect",
+    "authors": [
+        {
+            "name": "israel dahan",
+            "email": "id@studiodvd.co.il"
+        }
+    ],
+    "require": {
+        "elasticsearch/elasticsearch": "^7.6"
+    }
+}
