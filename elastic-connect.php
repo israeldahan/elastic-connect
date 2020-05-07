@@ -1,9 +1,5 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) {
-  die( '-1' );
-}
-
 /*
 Plugin Name: Elastic Connect
 Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
@@ -14,4 +10,20 @@ Author URI: http://URI_Of_The_Plugin_Author
 License: A "Slug" license name e.g. GPL2
 */
 
-require_once 'vendor/autoload.php';
+namespace ElasticConnect;
+
+use Elasticsearch\ClientBuilder;
+
+if ( ! defined( 'ABSPATH' ) ) {
+  die( '-1' );
+}
+
+require_once './vendor/autoload.php';
+
+
+//
+//$client = ClientBuilder::create()
+//  ->setElasticCloudId('<elastic-cloud-id>')
+//  ->setBasicAuthentication('<username>', '<secure-password>')
+//  ->build();
+//
